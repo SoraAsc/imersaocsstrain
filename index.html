@@ -2,20 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>CSS Train Site</title>
     <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <script src="https://kit.fontawesome.com/ad6b94707e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=DM+Mono:ital@1&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+  </head>
 <body>    
     <header>
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contatos">Contato</a></li>
       </ul>
     </nav>
-    <h1 class="site-title">Marcos V</h1>
-    <h2 class="site-subtitle">jr. frontend developer</h2>
-  </header>
+    <div class="titulo">        
+        <h1 class="site-title">Marcos V</h1>
+        <h2 class="site-subtitle">jr. frontend developer</h2>
+    </div>
+    </header>
+    <section id="sobre" class="sobre">
+      <div class="texto">
+        <h2 class="conteudo title">Sobre</h2>
+        <p class="conteudo">Aqui deveria possuir algo interessante</p>
+        <p class="conteudo">Mas como só é um teste não terá muita informação aqui. </p>
+        <p class="conteudo">Seja nessa parte ou na página em si </p>
+      </div>
+    </section>
+    <div class="barradivisora"></div>
+
+  <section id="projetos" class="portfolio">
+    <h2>Projetos</h2>
+    <div class="grid">
+      
+
+        <figure>
+          <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+          <figcaption>Mobile</figcaption>
+        </figure>
+        <figure>
+          <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+          <figcaption>Web design</figcaption>
+        </figure>
+        <figure>
+          <img class="img-portfolio" src="./img/unity.png" alt="Unity">
+          <figcaption>Unity</figcaption>
+        </figure>
+        <figure>
+          <img class="img-portfolio" src="./img/java-logo.jpg" alt="Java">
+          <figcaption>Java Developer</figcaption>
+      </div>
+  </section>
+  <div class="barradivisora"></div>
+  <section id="contatos" class="contato">
+  <h2>Contatos</h2>
+	<div class="grid icons ">
+    <a class="icons_parts" target="_blank" href="https://github.com/SoraAsc">
+      <i class="fab fa-github-alt"></i>
+      Github
+    </a>
+    <a class="icons_parts" target="_blank" href="#">
+      <i class="fab fa-twitter"></i>
+      Twitter
+    </a>
+    <a class="icons_parts" target="_blank" href="#">
+      <i class="fab fa-linkedin-in"></i>
+      Linkedin
+    </a>
+    <a class="icons_parts" href="#">
+      <i class="far fa-envelope"></i>
+      Email
+    </a>
+  </div>
+</section>
+
 </body>
 </html>

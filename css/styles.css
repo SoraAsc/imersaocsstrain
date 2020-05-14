@@ -1,36 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-color: #B68F1F;
-    background-image: url(https://nodeoito.com/wp-content/uploads/2016/08/binary1.jpg);
+    background-color: pink;
+    background-image: url('../img/fundo.gif') ;
     background-size: auto 100vh;
+    color: white;
     font-family: Arial;
     height: 100vh;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+  font-family: 'DM Mono', monospace;
+
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
-  
-  .menu{
+}
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
     background: white;  
-  }
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    opacity: 0.9;
+    z-index: 1;
+}
   
-  .menu ul{
+.menu ul{
     display: flex;
     justify-content: space-around;
-  }
-  .menu li{
+    
+}
+.menu li{
     list-style:none;
-  }
-  
-  a {
+    
+}
+
+.barradivisora{
+  background-color: rgba(33, 125, 187, 0.288);
+  width: 100%;
+  height: 20px;
+}
+
+.menu a {
+  font-weight: bolder;
+  display: block;
+  padding:  10px 20px;
+  transition: background-color 1s,color 1.2s;
+}
+.menu a:active,
+.menu a:hover{
+  background-color: teal;
+  color: whitesmoke;
+}
+
+a {
     color: teal;
     text-decoration: none;
-  }
+}
   
-  a:hover{
+a:hover{
     text-decoration: underline;
+}
+
+.texto .conteudo{
+  text-align: center;
+  transform: perspective(300px) rotateX(20deg);
+  padding-bottom: 10px;
+  animation: linear 5s animacaoTexto infinite;
+}
+
+.title{
+  color: yellow;
+  font-size: 5em;
+}
+
+@keyframes animacaoTexto{
+  0%{
+    transform: translateY(300px) perspective(300px) rotateX(20deg);
   }
-  .site-subtitle,
-  .site-title{
-    color: whitesmoke;
-    text-align: center;  
+  50%{
+    transform: translateY(0px) perspective(350px) rotateX(25deg);
+    opacity: .5;
   }
-  .site-subtitle{
+  100%{
+    transform: translateY(-300px) perspective(400px) rotateX(30deg);
+    opacity: 0;
+  }
+}
+
+.titulo{
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+
+  animation: linear 1s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+  100%{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-subtitle,
+.site-title{
+  color: whitesmoke;
+  text-align: center;  
+}
+
+.site-title{
+  font-size: 4em;
+  font-family: 'Bungee Outline', cursive;
+  line-height: 1.8em;
+}
+
+.site-subtitle{
     font-style: italic;
+    line-height: 1.8em;
+}
+
+
+.sobre,
+.contato,
+.portfolio{
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.contato h2,
+.portfolio h2{
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 2em;
+  font-size: 2.4em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
   }
+}
+@media (min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3,240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 5.5em - 48px);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    border-radius: 10px;
+    transition: transform 500ms;
+}
+  
+.img-portfolio:hover{    
+    transform: scale(1.5);
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.icons_parts{
+  padding-left: 18px;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 1.5em;
+  transition: text-shadow 1s;
+}
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #ffffffc7 ;
+} 
+
