@@ -12,7 +12,7 @@
 <body>    
     <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contatos">Contato</a></li>
@@ -23,40 +23,87 @@
         <h2 class="site-subtitle">jr. frontend developer</h2>
     </div>
     </header>
-    <section id="sobre" class="sobre">
+    <div class="barradivisora"></div>
+
+    <section id="sobre" class="sobre container">
+        <h2>Sobre</h2>
+
       <div class="texto">
+
         <h2 class="conteudo title">Sobre</h2>
+        <figure class="avatar conteudo">
+          <img src="img/parrot.png" alt="Parrot">
+        </figure>
         <p class="conteudo">Aqui deveria possuir algo interessante</p>
         <p class="conteudo">Mas como só é um teste não terá muita informação aqui. </p>
-        <p class="conteudo">Seja nessa parte ou na página em si </p>
+        <p class="conteudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum earum corporis vitae veniam magni nemo ullam cum accusamus, laboriosam saepe reprehenderit labore, exercitationem suscipit. Ratione perspiciatis deleniti nostrum enim?</p>
+        <p class="conteudo">Laudantium vero nostrum porro ipsum. In quaerat natus non, vitae ullam at, laborum ratione delectus eum corporis perspiciatis amet maxime odit facilis? Unde voluptas, magni praesentium incidunt nisi tenetur nulla?</p>
+        <p class="conteudo">Saepe dolorum optio similique temporibus explicabo porro! Illo deserunt quo in odio vero ab officiis autem sapiente, nam quidem incidunt cupiditate asperiores dicta, nostrum ex sed nihil accusamus animi ipsum.</p>
+        <p class="conteudo">Nobis illum eum labore commodi alias excepturi nostrum, in enim quibusdam et neque vero quasi id. Esse adipisci exercitationem omnis, ullam odit eius quisquam autem animi dicta quibusdam sunt hic!</p>
+        <p class="conteudo">Esse site foi construido durante a <a target="_blank" href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura.</a> </p>
+        
       </div>
     </section>
     <div class="barradivisora"></div>
 
-  <section id="projetos" class="portfolio">
+  <section id="projetos" class="portfolio container">
     <h2>Projetos</h2>
-    <div class="grid">
-      
+      <div class="grid">   
 
-        <figure>
-          <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-          <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-          <figcaption>Web design</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/unity.png" alt="Unity">
-          <figcaption>Unity</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/java-logo.jpg" alt="Java">
-          <figcaption>Java Developer</figcaption>
+        <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+            <figcaption>Mobile</figcaption>
+          </figure>
+          <div class="card-back">
+            Mobile
+          </div>          
+        </div>
+      </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+              <figcaption>Web Design</figcaption>
+            </figure>
+            <div class="card-back">
+              Web Design
+            </div>          
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/Unity-Logo.png" alt="Unity">
+              <figcaption>Unity</figcaption>
+            </figure>
+            <figure class="card-back">
+              <img class="img-portfolio" src="./img/unity.png" alt="Unity_Ecos">
+              <figcaption>Ecos</figcaption>
+            </figure>
+    
+        </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/java-logo.jpg" alt="Java">
+              <figcaption>Java Developer</figcaption>
+            </figure>
+            <div class="card-back">
+              Java Developer
+            </div>          
+          </div>
+        </div>  
+
       </div>
   </section>
   <div class="barradivisora"></div>
-  <section id="contatos" class="contato">
+  <section id="contatos" class="contato container">
   <h2>Contatos</h2>
 	<div class="grid icons ">
     <a class="icons_parts" target="_blank" href="https://github.com/SoraAsc">
